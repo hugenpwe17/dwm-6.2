@@ -55,6 +55,8 @@ static const Rule rules[] = {
 	{ "MATLAB R2022a - academic use", NULL, "Figure 4", 0 , 1, -1 },
 	{ "MATLAB R2022a - academic use", NULL, "Figure 5", 0 , 1, -1 },
 	{ "MATLABWindow", NULL, "Simulink Start Page", 0 , 1, -1 },
+	{ "MATLAB R2022a - academic use", NULL, "Scope" , 0 , 1, -1 },
+	{ "Microsoft-edge", NULL, "New tab - Personal - Microsoft Edge", 2 , 0, -1 },
 };
 
 /* layout(s) */
