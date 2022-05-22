@@ -49,6 +49,12 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "MATLAB R2022a - academic use", NULL, "Figure 1", 0 , 1, -1 },
+	{ "MATLAB R2022a - academic use", NULL, "Figure 2", 0 , 1, -1 },
+	{ "MATLAB R2022a - academic use", NULL, "Figure 3", 0 , 1, -1 },
+	{ "MATLAB R2022a - academic use", NULL, "Figure 4", 0 , 1, -1 },
+	{ "MATLAB R2022a - academic use", NULL, "Figure 5", 0 , 1, -1 },
+	{ "MATLABWindow", NULL, "Simulink Start Page", 0 , 1, -1 },
 };
 
 /* layout(s) */
