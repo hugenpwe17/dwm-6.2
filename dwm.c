@@ -188,7 +188,7 @@ static long getstate(Window w);
 static int gettextprop(Window w, Atom atom, char *text, unsigned int size);
 static void grabbuttons(Client *c, int focused);
 static void grabkeys(void);
-// static void hide(const Arg *arg);
+static void hide(const Arg *arg);
 static void hidewin(Client *c);
 static void incnmaster(const Arg *arg);
 static void keypress(XEvent *e);
@@ -220,7 +220,7 @@ static void setlayout(const Arg *arg);
 static void setmfact(const Arg *arg);
 static void setup(void);
 static void seturgent(Client *c, int urg);
-// static void show(const Arg *arg);
+static void show(const Arg *arg);
 static void showwin(Client *c);
 static void showhide(Client *c);
 static void sigchld(int unused);
@@ -1102,13 +1102,13 @@ grabkeys(void)
 	}
 }
 
-// void
-// hide(const Arg *arg)
-// {
-// 	hidewin(selmon->sel);
-// 	focus(NULL);
-// 	arrange(selmon);
-// }
+void
+hide(const Arg *arg)
+{
+	hidewin(selmon->sel);
+	focus(NULL);
+	arrange(selmon);
+}
 
 void
 hidewin(Client *c) {
@@ -1810,13 +1810,13 @@ seturgent(Client *c, int urg)
 	XFree(wmh);
 }
 
-// void
-// show(const Arg *arg)
-// {
-// 	if (selmon->hidsel)
-// 		selmon->hidsel = 0;
-// 	showwin(selmon->sel);
-// }
+void
+show(const Arg *arg)
+{
+	if (selmon->hidsel)
+		selmon->hidsel = 0;
+	showwin(selmon->sel);
+}
 
 void
 showwin(Client *c)
