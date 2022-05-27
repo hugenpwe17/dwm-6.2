@@ -71,7 +71,8 @@ static const Layout layouts[] = {
 	/* symbol     arrange function */
 	// { "[]=",      tile },    /* first entry is default */
 	{ "平铺",      tile },    /* first entry is default */
-	{ "[M]",      monocle },
+	// { "[M]",      monocle },
+	{ "聚焦",      monocle },
 	// { "[@]",      spiral },
 	{ "螺旋",      spiral },
 	{ "[\\]",     dwindle },
@@ -103,6 +104,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+static const char *roficmd[] = { "rofi", "-show", "run"};
 static const char *termcmd[]  = { "st", NULL };
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "80x34", NULL };
